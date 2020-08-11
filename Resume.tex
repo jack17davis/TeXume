@@ -1,0 +1,114 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref} %added for adding external links
+%\usepackage{enumitem} %do not need this because an import already imports this
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Jack Davis}
+\address{(413) 271-4254 \\ Jack17davis@gmail.com \\ 119 Albion Road Somerville, MA 02144}
+
+
+\begin{document}
+
+\begin{rSection}{Education}
+
+{\bf University of Massachusetts Boston} \hfill {\em May 2021} 
+\\ Bachelor of Science in Computer Science, Minor in Mathematics \hfill{3.69}
+\\ Honors College
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
+	Course Work       & Data Structures \& Algorithms, Linear Algebra, Probability \& Statistics, \\
+	                   & Proof Writing, Databases, Artificial Intelligence, Operating Systems \\
+	Software \& Tools  & Eclipse IDE, MS Office, Git, Vim, Linux, Google Drive, Latex, Unity \\
+	Languages          & Java, SQL, Python, C \& x86 Assembly\\
+\end{tabular}
+ 
+\end{rSection}
+
+\begin{rSection} {Projects}
+	\begin{rProject} {\href{https://bitbucket.org/safeiot/shelley-checker/src/master/}{Shelley Checker}}{Research Assistant}{July 2020-present}
+		\item Allows users to specify systems and their operations, and checks for possible errors using automata theory. I am currently adding conditional logic into the language using \textbf{python}. 
+	\end{rProject}
+	\begin{rProject} {\href{https://github.com/jack17davis/PyGames}{PyGames}}{Personal Project}{June 2020-present}
+		\item Small \textbf{python} library for checkers-style games. The default computer player makes use of the A* algorithm.
+	\end{rProject}
+
+%	\begin{rProject}{Flex Break} {Group Project at Google JTerm Program} {January 2020}
+%		\item Used \textbf{Java} and \textbf{Android Studio} to create an app that allows the user to set alarms and review a list of stretches. We used \textbf{Git} to manage files.
+%	\end{rProject}
+\end{rSection}
+
+\begin{rSection}{Work Experience}
+
+\begin{rSubsection}{Intern}{Summer 2020}{MIT IS\&T Department}{}
+	{
+	\item Developed, tested, and implemented best practice logging standards for 100+ \textbf{Java} applications.
+	\item Learned the basics of web development including how to work with APIs and HTTPS.
+	}
+\end{rSubsection}
+
+\begin{rSubsection}{Intern}{January 2020-present}{UMass Boston Computer Science Department}{}
+	{
+	\item Communicate directly with our customers to provide quality service.
+	\item Implement code changes for tutoring website that services the entire campus using \textbf{Vim}, and \textbf{MySQL}.
+	}
+\end{rSubsection}
+
+\begin{rSubsection}{Teaching Assistant}{September 2019-present}{UMass Boston Computer Science Department}{}
+	{
+	\item Facilitate lab for CS341 Computer Architecture and Design course for 70 students by guiding them through circuit and software construction on Arduino Uno minicomputers.
+	}
+\end{rSubsection}
+
+%\vspace{-0.5em}
+%\textbf{Ambassador} \hfill{May 2019-present} \\
+%\textbf{Peer Mentor} \hfill{September 2018-May 2019} \\
+%\textit{UMass Boston Honors College}
+%\item First point of contact for visitors to the Honors College, coordinate with faculty, staff, and other ambassadors to promote the Honors College at university-wide events, create and manage the schedule for a team of six ambassadors.
+%\begin{itemize}[leftmargin=*]
+%	\itemsep -0.5em \vspace{-0.5em}
+%	\item Create and manage the schedule for our team of six student ambassadors using \textbf{Google Sheets}.
+%	\item Coordinate with faculty, staff, and other ambassadors to plan and organize events for students.
+%	\item Meet with freshmen students both 1:1 and in groups to help them with scheduling, adjusting to college, and developing study skills.
+%\end{itemize}
+\vspace{0.5em}
+
+%\vspace{-0.5em}
+\textbf{IT Lab Consultant} \hfill{January 2019-January 2020} \\
+\textit{UMass Boston IT Department}
+\begin{itemize}[leftmargin=*]
+	\itemsep -0.5em \vspace{-0.5em}
+	\item Maintained lab equipment, assisted students and faculty with university software, and used creative solutions to identify and troubleshoot hardware issues.
+\end{itemize}
+%\vspace{0.5em}
+
+%\begin{rSubsection}{IT Lab Consultant}{January 2019-December 2019}{UMass Boston IT Department}
+%\item Maintain lab equipment, assist students and faculty with university software, and use creative solutions to identify and troubleshoot hardware issues.
+%\end{rSubsection}
+
+%\begin{rSubsection}{Seafood Clerk}{June 2018-December 2018} {Shaw's Supermarkets}
+%	\item Consistently provided quality service to customers, assisted with inventory management.
+%\end{rSubsection}
+%\begin{rSubsection}{Ambassador}{September 2019-present}{UMass Boston Honors College}
+%\item First point of contact for visitors to the Honors College, coordinate with faculty, staff, and other ambassadors to promote the Honors College at university-wide events, create and manage the schedule for a team of six ambassadors.
+%\end{rSubsection}
+%
+%\begin{rSubsection}{Peer Mentor and Tutor}{September 2018-May 2019}{UMass Boston Honors College}
+%	\item Met with freshman Honors students to help them with scheduling, adjusting to college, and developing study skills. Tutored Computer Science and Math students.
+%\end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Activities and Awards} \itemsep -3pt
+\begin{itemize}[leftmargin=*]
+	\itemsep -0.5em
+	\item Eagle Scout \hfill {2017}
+	\item UMass Boston 2019 Emerging Leader Award \hfill {May 2019}
+	\item UMass Boston Track and Field Team \hfill {Fall 2017-January 2019} 
+%	\item UMass Boston Rock Climbing Club
+%	\item IT Photography group
+\end{itemize}
+\end{rSection}
+
+\end{document}
