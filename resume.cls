@@ -22,7 +22,7 @@
 \def\sectionskip{\bigskip}              %sets space between sections
 \def\sectionlineskip{\medskip}          %adds in vertical space around the divider lines
 \def\indent{1.25em}                     %changes indent for all sections
-\def\itemSeperation{-0.5em}            %changes the seperation between bullets
+\def\itemSeperation{-0.5em}             %changes the seperation between bullets
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -50,7 +50,7 @@
   	\MakeUppercase{\bf #1}
   	\sectionlineskip
   	\hrule
-  	\begin{list}{}{\setlength{\leftmargin}{\indent}}
+  	\begin{list}{}{\setlength{\leftmargin=\indent}}
   		\item[] % sets the list environment to no symbol
 		}{
   	\end{list}
@@ -72,23 +72,23 @@
   	\vspace{-0.5em} %removes space between list and job header
 }{
   \end{itemize}
-  \vspace{0.5em}
 }
 
-%custom (made by me!) to format Projects
-\newenvironment{Project}[4]{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Projects
+
+\newenvironment{Project}[5]{
 	%%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
 	%%    Project Name (bold), type(regular)  Dates (regular)    %%
-	%%    Title (emphasis)                Location (emphasis)    %%
+	%%    Info (regular)                      Link(regular)      %%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	{\bf #1}, {#2}                 \hfill                  {    #3}% Stop a space
-	\smallskip
-	% \cdot used for bullets, items non-indented
-	\begin{list}{$\cdot$}{\leftmargin=0em}
-		\itemsep \itemSeperation %removes space between items
-		\vspace{-0.5em} %removes space between list and project header
-		\item[]
-	}{
-	\end{list}
-	\vspace{0.5em}
-}
+	{\bf #1}, {#2}           \hfill                          {#3}\\
+	{#4}                     \hfill                          {#5}\\}
+	{\vspace{0em} %put a little space between this project and the next one
+	}
+
+
+
+
+
+
