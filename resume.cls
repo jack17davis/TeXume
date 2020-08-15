@@ -42,10 +42,9 @@
 % URL command for blue URLs
 \newcommand\URL[2]{\href{#1}{\color{blue}\uline{#2}}}
 
+\newcommand\header[5]{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % HEADER
-
-\newcommand\header[5]{
 	\ifthenelse{\equal{#5}{}}{ %if a 5th argument is empty
 		\begin{center}
 			\MakeUppercase{\Huge\bf #1} \\ \medskip
@@ -110,10 +109,9 @@
   \end{itemize}
 }
 
+\newenvironment{Project}[5]{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Projects
-
-\newenvironment{Project}[5]{
 	%%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
 	%%    Project Name (bold), type(regular)  Dates (regular)    %%
 	%%    Info (regular)                      Link(regular)      %%
