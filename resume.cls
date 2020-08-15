@@ -62,6 +62,21 @@
 	}
 }
 
+\newenvironment{Section}[1]{
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% SECTIONS: Create section headings
+	
+	
+	\sectionskip
+	\MakeUppercase{\bf #1}
+	\sectionlineskip
+	\hrule
+	\begin{list}{}{\setlength{\leftmargin=\indent}}
+		\item[] % sets the list environment to no symbol
+	}{
+	\end{list}
+}
+
 \newenvironment{Education}[5]{
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Jobs
@@ -76,20 +91,20 @@
 	{#5}
 } 
 
-\newenvironment{Section}[1]{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% SECTIONS: Create section headings
-
-
-	\sectionskip
-  	\MakeUppercase{\bf #1}
-  	\sectionlineskip
-  	\hrule
-  	\begin{list}{}{\setlength{\leftmargin=\indent}}
-  		\item[] % sets the list environment to no symbol
-		}{
-  	\end{list}
-}
+\newenvironment{Project}[5]{
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Projects
+	%%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
+	%%    Project Name (bold), link(regular)  Dates (regular)    %%
+	%%    Info (regular)                      Link(regular)      %%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	{\bf #1}, {#2}           \hfill                          {#3}\\
+	{#4}                     \hfill                          {#5}
+	\smallskip
+	}
+	{
+		\vspace{0em} %put a little space between this project and the next one
+	}
 
 \newenvironment{Job}[3]{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,20 +123,6 @@
 }{
   \end{itemize}
 }
-
-\newenvironment{Project}[5]{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Projects
-	%%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
-	%%    Project Name (bold), type(regular)  Dates (regular)    %%
-	%%    Info (regular)                      Link(regular)      %%
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	{\bf #1}, {#2}           \hfill                          {#3}\\
-	{#4}                     \hfill                          {#5}\\}
-	{
-		\vspace{0em} %put a little space between this project and the next one
-	}
-
 
 
 
