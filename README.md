@@ -12,6 +12,10 @@
  ```
  3. Begin by editing ```resume.tex```. This is the main file and where most edits are necessary. In ```resume.cls``` I have created a number of environments that operate somewhat like functions; Provide a Job environment your title, dates, and employer and it will format that information into a job on the resume.
 
- ![Example Input](https://github.com/jack17davis/TeXume/blob/master/Example Job.PNG)
+### Example job in resume.tex
+![Example Input](https://github.com/jack17davis/TeXume/blob/master/Example%20Job.PNG)
  
- ![Example Output](https://github.com/jack17davis/TeXume/blob/master/Example Output.PNG)
+### The corresponding output in resume.pdf
+![Example Output](https://github.com/jack17davis/TeXume/blob/master/Example%20Output.PNG)
+
+Please feel free to reachout at jack17davis@gmail.com.
