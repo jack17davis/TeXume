@@ -1,5 +1,7 @@
 # TeXume
 
+I would like to give credit to two repositories that I used while developing this project. My resume started as a derivative of <a href="https://github.com/treyhunner/resume"> Trey Hunner's repository </a> but has slowly become unique over time. I also found that <a href="https://ctan.org/pkg/gradstudentresume"> Anagha Kumar's resume </a> fit the style I was looking for.
+
 ## This project serves two purposes:
 1. To share <a href="https://github.com/jack17davis/TeXume/blob/master/Resume.pdf"> my resume </a> with the world
 2. To help other computer science students make LaTeX Resumes

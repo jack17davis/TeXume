@@ -1,17 +1,28 @@
 % resume.cls
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Copyright (C) 2010 by Trey Hunner
+%
+% Copying and distribution of this file, with or without modification,
+% are permitted in any medium without royalty provided the copyright
+% notice and this notice are preserved.  This file is offered as-is,
+% without any warranty.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Note: I have modified this class to fit my own needs but I do want to give credit
+% to the original creator. Trey Hunner's can be found here: https://github.com/treyhunner/resume
 
 \ProvidesClass{resume}[8/12/2020 Resume class]
 \LoadClassWithOptions{article}
 
-\RequirePackage{hyperref}               %added for adding external links
-\RequirePackage{xcolor}                 %added for blue links
-\RequirePackage[normalem]{ulem}         %added for underlining
+\RequirePackage{hyperref}               % added for adding external links
+\RequirePackage{xcolor}                 % added for blue links
+\RequirePackage[normalem]{ulem}         % added for underlining
 \RequirePackage{anysize}
 \RequirePackage[parfill]{parskip}       % Do not indent paragraphs
 \RequirePackage{array}                  % required for boldface tabular columns
-%\RequirePackage{ifthen}
-\RequirePackage{enumitem}               %for more complicated list environments
+\RequirePackage{ifthen}                 % added for variable number of arguments in commands
+\RequirePackage{enumitem}               % for more complicated list environments
 
 %the document margins can be set here, but I prefer to do it in the document itself
 %\usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry} % Document margins
