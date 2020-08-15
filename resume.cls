@@ -34,6 +34,8 @@
 \def\sectionlineskip{\medskip}          %adds in vertical space around the divider lines
 \def\indent{1.25em}                     %changes indent for all sections
 \def\itemSeperation{-0.5em}             %changes the seperation between bullets
+\def\headerSpace{-0.15in}               %changes how much space is between end of header and first section
+\def\seperator{$\diamond$ }             %changes the seperator between items in the header
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -44,12 +46,21 @@
 % HEADER
 
 \newcommand\header[5]{
-	\begin{center}{}
-		\centering{{\MakeUppercase{\Huge\bf #1}} \\ \medskip
-			#2 $\diamond$ #3 \\ \smallskip
-			#4 $\diamond$ #5}
-	\end{center}
-	\vspace{-0.25in} %tighten things up a bit
+	\ifthenelse{\equal{#5}{}}{ %if a 5th argument is empty
+		\begin{center}
+			\MakeUppercase{\Huge\bf #1} \\ \medskip
+			#2 \seperator #3 \seperator #4 
+		\end{center}
+		\vspace{\headerSpace} %tighten things up a bit
+	}
+	{ %else
+		\begin{center}
+			\MakeUppercase{\Huge\bf #1} \\ \medskip
+			#2 \seperator #3 \\ \smallskip
+			#4 \seperator #5
+		\end{center}
+		\vspace{\headerSpace} %tighten things up a bit
+	}
 }
 
 
