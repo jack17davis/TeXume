@@ -96,11 +96,10 @@
 	% Projects
 	%%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
 	%%    Project Name (bold), link(regular)  Dates (regular)    %%
-	%%    Info (regular)                      Link(regular)      %%
+	%%    What (regular)                      Type(Italics)      %%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	{\bf #1}, {#2}           \hfill                          {#3}\\
-	{#4}                     \hfill                          {#5}
-	\smallskip
+	{#4}                     \hfill                  {\textit{#5}} \vspace{0em}
 	}
 	{
 		\vspace{0em} %put a little space between this project and the next one
