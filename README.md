@@ -1,1 +1,17 @@
-My personal <a href="https://github.com/jack17davis/TeXume/blob/master/Resume.pdf"> resume </a> designed using LaTeX.
+# TeXume
+
+## This project serves two purposes:
+1. To share <a href="https://github.com/jack17davis/TeXume/blob/master/Resume.pdf"> my resume </a> with the world
+2. To help other computer science students make LaTeX Resumes
+
+## How to make your own TeXume:
+ 1. I recommend installing <a href="https://www.texstudio.org/"> TeXstudio </a> as your IDE and <a href="https://miktex.org/download"> MiKTeX </a> as a dependency manager. They work quite well together and are available on Windows, Mac, and Linux. However, you can also use <a href="https://www.overleaf.com/"> Overleaf </a> which is a in-browser editor and dependancy manager.
+ 2. Download either using the green button in the top right corner or git 
+ ```bash  
+    git clone https://github.com/jack17davis/TeXume.git
+ ```
+ 3. Begin by editing ```resume.tex```. This is the main file and where most edits are necessary. In ```resume.cls``` I have created a number of environments that operate somewhat like functions; Provide a Job environment your title, dates, and employer and it will format that information into a job on the resume.
+
+ ![Example Input](https://github.com/jack17davis/TeXume/blob/master/Example Job.PNG)
+ 
+ ![Example Output](https://github.com/jack17davis/TeXume/blob/master/Example Output.PNG)
