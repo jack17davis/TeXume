@@ -63,11 +63,25 @@
 	}
 }
 
+\newenvironment{Education}[5]{
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Jobs
+	
+	%%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
+	%%    School (bold)                       Dates (regular)    %%
+	%%    Degree (regular)                    GPA (regular)      %%
+	%%    extra (regular)                                        %%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	{\bf #1}                 \hfill     {#2}\\% date will appear at end of line
+	{\em #3}                 \hfill     {#4}\\
+	{#5}
+} 
 
+\newenvironment{Section}[1]{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SECTIONS: Create section headings
 
-\newenvironment{Section}[1]{
+
 	\sectionskip
   	\MakeUppercase{\bf #1}
   	\sectionlineskip
@@ -78,10 +92,10 @@
   	\end{list}
 }
 
+\newenvironment{Job}[3]{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Jobs
 
-\newenvironment{Job}[3]{
   %%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
   %%    Employer (bold)                     Dates (regular)    %%
   %%    Title (emphasis)                                       %%
@@ -106,7 +120,8 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	{\bf #1}, {#2}           \hfill                          {#3}\\
 	{#4}                     \hfill                          {#5}\\}
-	{\vspace{0em} %put a little space between this project and the next one
+	{
+		\vspace{0em} %put a little space between this project and the next one
 	}
 
 
