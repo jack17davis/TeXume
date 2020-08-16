@@ -100,6 +100,8 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	{\bf #1}, {#2}           \hfill                          {#3}\\
 	{#4}                     \hfill                  {\textit{#5}} \vspace{0em}
+	
+	%this whitespace is necessary
 	}
 	{
 		\vspace{0em} %put a little space between this project and the next one
