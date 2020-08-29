@@ -12,6 +12,9 @@
 *.cb2
 .*.lb
 
+#added by me
+*.*~
+
 ## Intermediate documents:
 *.dvi
 *.xdv
