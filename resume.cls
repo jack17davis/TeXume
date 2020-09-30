@@ -23,6 +23,7 @@
 \RequirePackage{array}                  % required for boldface tabular columns
 \RequirePackage{ifthen}                 % added for variable number of arguments in commands
 \RequirePackage{enumitem}               % for more complicated list environments
+\usepackage{tabularx}                   % for properly centering the header based on center column
 
 %the document margins can be set here, but I prefer to do it in the document itself
 %\usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry} % Document margins
@@ -55,8 +56,12 @@
 	{ %else
 		\begin{center}
 			\MakeUppercase{\Huge\bf #1} \\ \medskip
-			#2 \seperator #3 \\ \smallskip
-			#4 \seperator #5
+			\newcolumntype{Y}{>{\raggedleft\arraybackslash}X} %allows centering to occur based on middle col
+			\setlength\tabcolsep{1.5pt} %reduce the space between columns
+			\begin{tabularx}{\linewidth}{YcX}
+				#2 & \seperator & #3 \\
+				#4 & \seperator & #5
+			\end{tabularx}
 		\end{center}
 		\vspace{\headerSpace} %tighten things up a bit
 	}
@@ -86,8 +91,8 @@
 	%%    Degree (regular)                    GPA (regular)      %%
 	%%    extra (regular)                                        %%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	{\bf #1}                 \hfill     {#2}\\% date will appear at end of line
-	{\em #3}                 \hfill     {#4}\\
+	\hspace{-\indent} {\bf #1}                 \hfill     {#2}\\% date will appear at end of line
+	{\em #3}                 \hfill     {GPA: #4}\\
 	{#5}
 } 
 
@@ -98,10 +103,11 @@
 	%%    Project Name (bold), link(regular)  Dates (regular)    %%
 	%%    What (regular)                      Type(Italics)      %%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	{\bf #1}, {#2}           \hfill                          {#3}\\
+	\hspace{-\indent} {\bf #1}, {#2}           \hfill                          {#3}\\
 	{#4}                     \hfill                  {\textit{#5}} \vspace{0em}
 	
 	%this whitespace is necessary
+	
 	}
 	{
 		\vspace{0em} %put a little space between this project and the next one
@@ -115,7 +121,7 @@
   %%    Employer (bold)                     Dates (regular)    %%
   %%    Title (emphasis)                                       %%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  {\bf #1}                 \hfill     {#2}\\% date will appear at end of line
+  \hspace{-\indent} {\bf #1}                 \hfill     {#2}\\% date will appear at end of line
   {\em #3}                 \hfill
   \smallskip
   \begin{itemize}[leftmargin=*]
