@@ -1,4 +1,5 @@
 \documentclass{resume} % Use the custom resume.cls style
+\RequirePackage{verbatim}
 \usepackage[left=0.7in,top=0.8in,right=0.7in,bottom=0.6in]{geometry} 
 
 
@@ -15,12 +16,12 @@
 
 \begin{Section}{Education}
 	
-	\begin{Education}{University of Massachusetts Boston}{May 2021}{Bachelor of Science in Computer Science, Minor in Mathematics}{3.69}{Honors College}
+	\begin{Education}{University of Massachusetts Boston}{May 2021}{Bachelor of Science in Computer Science, Minor in Mathematics}{3.7}{Honors College}
 		
 		\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
 			Course Work       & Data Structures \& Algorithms, Linear Algebra, Probability \& Statistics, \\
-			& Proof Writing, Databases, Artificial Intelligence, Operating Systems \\
-			Software \& Tools  & Eclipse IDE, MS Office, Git, Vim, Linux, Google Drive, Latex, Unity \\
+			& Compilers, Databases, Artificial Intelligence, Operating Systems \\
+			Software \& Tools  & Git, Eclipse IDE, MS Office, Vim, Linux, Google Drive, Latex, Unity \\
 			Languages          & Java, SQL, Python, C \& x86 Assembly, JavaScript\\
 		\end{tabular}
 	\end{Education}
@@ -36,7 +37,7 @@
 		{Personal Project}
 		I created a repository to share the \textbf{LaTeX} source code I use to generate my resume.
 	\end{Project}
-
+\begin{comment}
 	\begin{Project} {Shelley Checker}
 		{\URL{https://bitbucket.org/safeiot/shelley-checker/src/master/}
 		{bitbucket.org/safeiot/shelley-checker/src/master/}}
@@ -45,6 +46,7 @@
 		{Research associated with University of Massachusetts Boston}
 		Helps users to plan systems and their operations, and check for possible integration errors using automata theory. I am currently adding conditional logic into the language using \textbf{Python}. 
 	\end{Project}
+\end{comment}
 
 	\begin{Project} {PyGames}
 		{\URL{https://github.com/jack17davis/PyGames}{github.com/jack17davis/PyGames/}}
@@ -67,24 +69,34 @@
 			\item Communicate directly with our customers to provide quality service.
 	\end{Job}
 	
-	\begin{Job}{Teaching Assistant}{September 2019-present}{UMass Boston Computer Science Department}
-			\item Facilitate \URL{https://github.com/jack17davis/cs341}{lab} for CS341 Computer Architecture and Design course for 70 students by guiding them through circuit and software construction on Arduino Uno minicomputers.
-	\end{Job}
-	
-%	\textbf{Ambassador} \hfill{May 2019-present} \\
-%	\textbf{Peer Mentor} \hfill{September 2018-May 2019} \\
-%	\textit{UMass Boston Honors College}
-%	\begin{itemize}[leftmargin=*]
-%		\itemsep -0.5em \vspace{-0.5em}
-%		\item Create and manage the schedule for our team of six student ambassadors using \textbf{Google Sheets}.
-%		\item Coordinate with faculty, staff, and other ambassadors to plan and organize events for students.
-%		\item Meet with freshmen students both 1:1 and in groups to help them with scheduling, adjusting to college, and developing study skills.
-%	\end{itemize}
+\begin{comment}
+	\textbf{Ambassador} \hfill{May 2019-present} \\
+	\textbf{Peer Mentor} \hfill{September 2018-May 2019} \\
+	\textit{UMass Boston Honors College}
+	\begin{itemize}[leftmargin=*]
+	\itemsep -0.5em \vspace{-0.5em}
+	\item Create and manage the schedule for our team of six student ambassadors using \textbf{Google Sheets}.
+	\item Coordinate with faculty, staff, and other ambassadors to plan and organize events for students.
+	\item Meet with freshmen students both 1:1 and in groups to help them with scheduling, adjusting to college, and developing study skills.
+	\end{itemize}
+\end{comment}
+	\begin{Job}{Ambassador \& Peer Mentor}{September 2018-present}{UMass Boston Honors College}
+			\item Create and manage the schedule for our team of six student ambassadors using \textbf{Google Sheets}.
+			\item Coordinate with faculty, staff, and other ambassadors to plan and organize events for students.
+			\item Meet with freshmen students both 1:1 and in groups to help them with scheduling, adjusting to college, and developing study skills.
+	\end{Job}		
+
 	\begin{Job}{Software Engineering Intern}{June 2020 - August 2020}{MIT Information Systems \& Technology Department}
 	\item Developed, tested, and implemented best practice logging standards for 100+ \textbf{Java} applications.
 	\item Investigated the possibility of using \textbf{python} and regular expressions for automated error reporting. 
 	\item Gained experience with REST APIs using \textbf{postman} and \textbf{curl}.
 \end{Job}
+	
+	\begin{Job}{Teaching Assistant}{September 2019-December 2020}{UMass Boston Computer Science Department}
+			\item Facilitated \URL{https://github.com/jack17davis/cs341}{lab} for CS341 Computer Architecture and Design course for 70 students by guiding them through circuit and software construction on Arduino Uno minicomputers.
+			\item Adapted course material to work online, making use of hardware simulators. 
+	\end{Job}
+	
 	
 	\begin{Job}{IT Lab Consultant}{January 2019-December 2019}{UMass Boston IT Department}
 		\item Maintain lab equipment, assist students and faculty with university software, and use creative solutions to identify and troubleshoot hardware issues.
