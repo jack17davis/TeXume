@@ -12,19 +12,35 @@
 \def\email{\URL{mailto:jack17davis@gmail.com}{Jack17davis@gmail.com}}
 \def\linkedin{\URL{https://www.linkedin.com/in/jack17davis/}{linkedin.com/in/jack17davis/}}
 
-\header{\name}{\addressGeneral}{\phone}{\email}{\linkedin} %create header
+\header{\name}{\addressGeneral}{\phone}{\email}{\linkedin} %create and display header
 
 \begin{Section}{Education}
 	
 	\begin{Education}{University of Massachusetts Boston}{May 2021}{Bachelor of Science in Computer Science, Minor in Mathematics}{3.7}{Honors College}
 		
 		\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
+			Languages          & Java, SQL, Python, JSP, C\\
+			Software \& Tools  & Git, Eclipse IDE, MS Office, Vim, Linux, Google Drive, LaTeX, Unity \\
 			Course Work       & Data Structures \& Algorithms, Linear Algebra, Probability \& Statistics, \\
 			& Compilers, Databases, Artificial Intelligence, Operating Systems \\
-			Software \& Tools  & Git, Eclipse IDE, MS Office, Vim, Linux, Google Drive, Latex, Unity \\
-			Languages          & Java, SQL, Python, C \& x86 Assembly, JavaScript\\
 		\end{tabular}
 	\end{Education}
+	
+\end{Section}
+
+\begin{Section} {Internships}
+	
+	\begin{Job}{Web Development Intern}{January 2020-present}{UMass Boston Computer Science Department}
+		\item Maintain both front-end and back-end of \URL{http://serlwind.cs.umb.edu:8080/oats/}{tutoring website} that services the entire campus.
+		\item Implement code changes and bug fixes in \textbf{Java}, \textbf{JSP}, and \textbf{SQL}.
+		\item Communicate directly with our customers to provide quality service.
+	\end{Job}
+	
+	\begin{Job}{Software Engineering Intern}{June 2020 - August 2020}{MIT Information Systems \& Technology Department}
+		\item Developed, tested, and implemented best practice logging standards for 100+ \textbf{Java} applications.
+		\item Investigated the possibility of using \textbf{Python} and regular expressions for automated error reporting. 
+		\item Gained experience with REST APIs using \textbf{postman} and \textbf{curl}.
+	\end{Job}
 	
 \end{Section}
 
@@ -33,10 +49,20 @@
 		{\URL{https://github.com/jack17davis/TeXume}
 			{github.com/jack17davis/TeXume/}}
 		{August 2020-present}
-		{Resume class for LaTeX}
+		{LaTeX-based Resume Template}
 		{Personal Project}
-		I created a repository to share the \textbf{LaTeX} source code I use to generate my resume.
+		\item Maintain a repository to share the \textbf{LaTeX} source code I use to generate my resume.
 	\end{Project}
+
+	\begin{Project} {PyGames}
+		{\URL{https://github.com/jack17davis/PyGames}{github.com/jack17davis/PyGames/}}
+		{June 2020-present}
+		{library of checkers-style games}
+		{Personal Project}
+		\item Designing a \textbf{Python} program to play variations of checkers using artificial intelligence.
+		\item Inspired by an in-course project.
+	\end{Project}
+
 \begin{comment}
 	\begin{Project} {Shelley Checker}
 		{\URL{https://bitbucket.org/safeiot/shelley-checker/src/master/}
@@ -47,65 +73,37 @@
 		Helps users to plan systems and their operations, and check for possible integration errors using automata theory. I am currently adding conditional logic into the language using \textbf{Python}. 
 	\end{Project}
 \end{comment}
-
-	\begin{Project} {PyGames}
-		{\URL{https://github.com/jack17davis/PyGames}{github.com/jack17davis/PyGames/}}
-		{June 2020-present}
-		{library of checkers-style games}
-		{Personal Project}
-		I took a \textbf{Python} assignment from my Artificial Intelligence course and extended it a bit further. The default computer player makes use of the A* algorithm.
-	\end{Project}
-	
-	%	\begin{Project}{Flex Break} {Group Project at Google JTerm Program} {January 2020}
-	%		\item Used \textbf{Java} and \textbf{Android Studio} to create an app that allows the user to set alarms and review a list of stretches. We used \textbf{Git} to manage files.
-	%	\end{Project}
+\begin{comment}
+		\begin{Project}{Flex Break} {Group Project at Google JTerm Program} {January 2020}
+			\item Used \textbf{Java} and \textbf{Android Studio} to create an app that allows the user to set alarms and review a list of stretches. We used \textbf{Git} to manage files.
+		\end{Project}
+\end{comment}
 \end{Section}
 
 \begin{Section}{Work Experience}
-	
-	\begin{Job}{Web Design Intern}{January 2020-present}{UMass Boston Computer Science Department}
-			\item Maintain both front-end and back-end of \URL{http://serlwind.cs.umb.edu:8080/oats/}{tutoring website} that services the entire campus.
-			\item Implement code changes and bug fixes in \textbf{Java}, \textbf{JavaScript}, and \textbf{mySQL}.
-			\item Communicate directly with our customers to provide quality service.
-	\end{Job}
-	
+
 \begin{comment}
-	\textbf{Ambassador} \hfill{May 2019-present} \\
-	\textbf{Peer Mentor} \hfill{September 2018-May 2019} \\
-	\textit{UMass Boston Honors College}
-	\begin{itemize}[leftmargin=*]
-	\itemsep -0.5em \vspace{-0.5em}
-	\item Create and manage the schedule for our team of six student ambassadors using \textbf{Google Sheets}.
-	\item Coordinate with faculty, staff, and other ambassadors to plan and organize events for students.
-	\item Meet with freshmen students both 1:1 and in groups to help them with scheduling, adjusting to college, and developing study skills.
-	\end{itemize}
-\end{comment}
 	\begin{Job}{Ambassador \& Peer Mentor}{September 2018-present}{UMass Boston Honors College}
 			\item Create and manage the schedule for our team of six student ambassadors using \textbf{Google Sheets}.
 			\item Coordinate with faculty, staff, and other ambassadors to plan and organize events for students.
 			\item Meet with freshmen students both 1:1 and in groups to help them with scheduling, adjusting to college, and developing study skills.
-	\end{Job}		
+	\end{Job}	
+\end{comment}	
 
-	\begin{Job}{Software Engineering Intern}{June 2020 - August 2020}{MIT Information Systems \& Technology Department}
-	\item Developed, tested, and implemented best practice logging standards for 100+ \textbf{Java} applications.
-	\item Investigated the possibility of using \textbf{python} and regular expressions for automated error reporting. 
-	\item Gained experience with REST APIs using \textbf{postman} and \textbf{curl}.
-\end{Job}
-	
 	\begin{Job}{Teaching Assistant}{September 2019-December 2020}{UMass Boston Computer Science Department}
-			\item Facilitated \URL{https://github.com/jack17davis/cs341}{lab} for CS341 Computer Architecture and Design course for 70 students by guiding them through circuit and software construction on Arduino Uno minicomputers.
+			\item Facilitated \URL{https://github.com/jack17davis/cs341}{lab} for Computer Architecture and Design course for 70 students by guiding them through circuit and software construction on Arduino Uno minicomputers.
 			\item Adapted course material to work online, making use of hardware simulators. 
 	\end{Job}
 	
 	
 	\begin{Job}{IT Lab Consultant}{January 2019-December 2019}{UMass Boston IT Department}
-		\item Maintain lab equipment, assist students and faculty with university software, and use creative solutions to identify and troubleshoot hardware issues.
+		\item Maintained lab equipment, assisted students and faculty with university software, and used creative solutions to identify and troubleshoot hardware issues.
 	\end{Job}
-	
-	%\begin{Job}{Seafood Clerk}{June 2018-December 2018} {Shaw's Supermarkets}
-	%	\item Consistently provided quality service to customers, assisted with inventory management.
-	%\end{Job}
-	
+\begin{comment}
+	\begin{Job}{Seafood Clerk}{June 2018-December 2018} {Shaw's Supermarkets}
+		\item Consistently provided quality service to customers, assisted with inventory management.
+	\end{Job}
+\end{comment}
 \end{Section}
 
 \begin{Section}{Activities and Awards} \itemsep -3pt
