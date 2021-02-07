@@ -46,6 +46,8 @@
 \newcommand\header[5]{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % HEADER
+% header can contain 3 or 4 contact fields
+
 	\ifthenelse{\equal{#5}{}}{ %if a 5th argument is empty
 		\begin{center}
 			\MakeUppercase{\Huge\bf #1} \\ \medskip
@@ -73,7 +75,9 @@
 	
 	
 	\sectionskip
-	\MakeUppercase{\bf #1}
+	\begin{center}
+		\MakeUppercase{\bf #1}
+	\end{center}
 	\sectionlineskip
 	\hrule
 	\begin{list}{}{\setlength{\leftmargin=\indent}}
