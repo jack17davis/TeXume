@@ -21,7 +21,7 @@
 		
 		\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
 			Languages          & Java, SQL, Python, JSP, Scheme, C\\
-			Software \& Tools  & Git, Eclipse IDE, Bash, Vim, Linux, LaTeX, Unity \\
+			Software \& Tools  & Git, Docker, Apache Airflow, Vim, Linux, LaTeX, Unity \\
 			Course Work       & Data Structures \& Algorithms, Linear Algebra, Probability \& Statistics, \\
 			& Compilers, Databases, Artificial Intelligence, Operating Systems \\
 		\end{tabular}
@@ -46,6 +46,7 @@
 \end{Section}
 
 \begin{Section} {Projects}
+	\begin{comment}
 	\begin{Project} {TeXume}
 		{\URL{https://github.com/jack17davis/TeXume}
 			{github.com/jack17davis/TeXume/}}
@@ -53,6 +54,19 @@
 		{LaTeX-based Resume Template}
 		{Personal Project}
 		\item Maintain a repository to share the \textbf{LaTeX} source code I use to generate my resume.
+	\end{Project}
+	\end{comment}
+	
+		\begin{Project} {Data Pipeline for US Case Law}
+		{\URL{https://www.dropbox.com/sh/tz7wyf3goyyg38t/AACIl90_aplSk9kUh67B_EWAa?dl=0&preview=taxyio.pdf}
+			{Project Specifications}}
+		{February 2021-present}
+		{ETL Data Pipeline}
+		{Group Capstone Project}
+		\item Extract data from \URL{https://www.courtlistener.com/api/}{existing repositories} using REST APIs.
+		\item Automate workflow using \textbf{Airflow} and store JSON objects in \textbf{Mongo} backend.
+		\item Communicate closely with our customer, \URL{https://www.taxy.io/}{Taxy.io} to insure compatibility with existing software.
+		\item Design for easy deployment, by containerizing applications with \textbf{docker-compose}.
 	\end{Project}
 
 	\begin{Project} {PyGames}
